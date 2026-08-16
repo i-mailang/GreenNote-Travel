@@ -4,6 +4,13 @@
   "version": "1.0.0",
   "description": "Reusable self-hosted trip planning and travel guide web app.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-mailang/GreenNote-Travel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/i-mailang/GreenNote-Travel/issues"
+  },
   "keywords": [
     "trip",
     "travel",

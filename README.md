@@ -107,7 +107,7 @@ CloudBase 和百度天气都不是默认依赖。Local Demo 使用本地仓库�
 
 当前版本为 V1.0。Local Demo、管理草稿流程、PWA、Mock Weather、可选 CloudBase 适配器及自动化测试已具备。现有限制：CloudBase 初始化仍需手工完成控制台配置；定时天气触发器需按自己的旅行日期创建；云端权限规则和管理员名单必须由部署者独立审核；真实旅行数据没有可视化导入向导。
 
-计划公共仓库名：`i-mailang/GreenNote-Travel`。在仓库真实创建前，本项目不提供虚构的 repository、homepage 或 issue 链接。
+GitHub 仓库：[i-mailang/GreenNote-Travel](https://github.com/i-mailang/GreenNote-Travel)。
 
 ## License
 
