@@ -1,0 +1,12 @@
+{
+  "*": { "invoke": false },
+  "getPublicTrip": { "invoke": true },
+  "getPublicWeather": { "invoke": true },
+  "refreshTripWeather": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "getAdminTrip": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "initializeTrip": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "saveAdminTrip": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "publishTrip": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "listTripBackups": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" },
+  "restoreTripBackup": { "invoke": "auth != null && auth.loginType != 'ANONYMOUS'" }
+}

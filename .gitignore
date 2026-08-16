@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.cloudbase/
+cloudbaserc.json
+playwright-report/
+.playwright-cli/
+test-results/
+output/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

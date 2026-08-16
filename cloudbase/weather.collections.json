@@ -1,0 +1,7 @@
+{
+  "status": "planned-not-created",
+  "collections": [
+    { "name": "trip_weather", "fixedDocument": "main", "clientRead": false, "clientWrite": false, "indexes": [] },
+    { "name": "trip_weather_runtime", "fixedDocument": "main", "clientRead": false, "clientWrite": false, "indexes": [] }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "greennote-travel",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reusable self-hosted trip planning and travel guide web app.",
+  "license": "MIT",
+  "keywords": [
+    "trip",
+    "travel",
+    "itinerary",
+    "pwa",
+    "react",
+    "cloudbase"
+  ],
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
+  },
+  "packageManager": "npm@11.13.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && node scripts/prepare-spa-fallback.mjs",
+    "build:cloud": "node scripts/build-cloud.mjs",
+    "test:cloud-dist": "node scripts/verify-cloud-dist.mjs",
+    "lint": "eslint .",
+    "test": "vitest run src",
+    "test:e2e": "playwright test",
+    "test:demo-assets": "node scripts/verify-demo-assets.mjs",
+    "test:weather-security": "node scripts/verify-weather-security.mjs",
+    "preview": "vite preview",
+    "typecheck:functions": "tsc -p tsconfig.functions.json",
+    "build:functions": "npm run typecheck:functions && node scripts/build-cloud-functions.mjs",
+    "test:functions": "npm run build:functions && node scripts/verify-cloud-functions.mjs",
+    "test:template-safety": "node scripts/verify-template-safety.mjs",
+    "cloud:deploy:functions": "node scripts/deploy-cloud.mjs functions",
+    "cloud:deploy:hosting": "node scripts/deploy-cloud.mjs hosting",
+    "cloud:deploy:all": "node scripts/deploy-cloud.mjs all"
+  },
+  "dependencies": {
+    "@cloudbase/js-sdk": "2.32.0",
+    "lucide-react": "^1.28.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "7.18.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudbase/cli": "3.7.0",
+    "@cloudbase/node-sdk": "3.18.3",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "6.0.5",
+    "esbuild": "^0.28.1",
+    "eslint": "^10.8.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.9.0",
+    "sharp": "^0.35.3",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.65.0",
+    "vite": "8.2.0",
+    "vite-plugin-pwa": "1.3.0",
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "nanoid": "3.3.18"
+  }
+}

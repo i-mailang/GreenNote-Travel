@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GreenNote Travel logo">
+  <rect width="512" height="512" rx="112" fill="#173f3a"/>
+  <path d="M96 350 210 190l66 86 50-64 90 138H96Z" fill="#f3eee3"/>
+  <circle cx="365" cy="138" r="46" fill="#df835c"/>
+  <path d="M134 365c70-42 162-38 244 0" fill="none" stroke="#df835c" stroke-width="22" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173f3a" />
+    <meta name="description" content="可复用的自托管旅行计划与行程导览工具" />
+    <style>
+      #app-boot { min-height: 100vh; display: grid; place-items: center; box-sizing: border-box; padding: 24px; color: #f1eee5; background: #14201d; text-align: center; font: 16px/1.7 system-ui, "Microsoft YaHei", sans-serif; }
+      #app-boot strong { display: block; margin-bottom: 8px; font-size: 20px; }
+      #app-boot p { max-width: 30em; margin: 0; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23173f3a'/%3E%3Cpath d='M9 47 24 25l9 13 8-12 14 21H9Z' fill='%23d9b77f'/%3E%3C/svg%3E" />
+    <title>GreenNote Travel</title>
+  </head>
+  <body>
+    <div id="root"><main id="app-boot"><p>正在载入 GreenNote Travel…</p></main></div>
+    <script>
+      (function () {
+        function showBootError() {
+          var boot = document.getElementById('app-boot')
+          if (!boot) return
+          boot.innerHTML = '<p><strong>网页未能正常载入</strong>请刷新一次；若仍无法打开，请在浏览器设置中清除此网站的缓存后重试。</p>'
+        }
+        window.setTimeout(showBootError, 12000)
+        window.addEventListener('error', function (event) {
+          if (event && event.target && event.target.tagName === 'SCRIPT') showBootError()
+        }, true)
+      }())
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

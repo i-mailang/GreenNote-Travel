@@ -1,0 +1,25 @@
+name: Feature request
+description: 提议一个清晰、可复用的新能力
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: 谁在什么情况下需要这个能力？请使用虚构或脱敏示例。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: 你希望 GreenNote Travel 如何工作？
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: 目前尝试过哪些替代方式？
+    validations:
+      required: true

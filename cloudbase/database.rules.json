@@ -1,0 +1,8 @@
+{
+  "trip_public": { "read": false, "write": false },
+  "trip_admin": { "read": false, "write": false },
+  "trip_backups": { "read": false, "write": false },
+  "admin_users": { "read": false, "write": false },
+  "trip_weather": { "read": false, "write": false },
+  "trip_weather_runtime": { "read": false, "write": false }
+}

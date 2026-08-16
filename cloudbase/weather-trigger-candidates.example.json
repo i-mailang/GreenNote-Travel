@@ -1,0 +1,6 @@
+{
+  "status": "example-only",
+  "timezone": "Asia/Shanghai",
+  "triggers": [],
+  "note": "Generate timer triggers from the selected Trip dates and AppConfig refreshTimes during a future deployment phase. No production schedule is included."
+}
